@@ -182,7 +182,7 @@ public final class MCEmojiPickerViewController: UIViewController {
     }
     
     private func setupArrowDirections() {
-        guard let sourceView = sourceView else { return }
+        guard sourceView != nil else { return }
         popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection(
             rawValue: arrowDirection.rawValue
         )
